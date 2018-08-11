@@ -3,6 +3,7 @@ import "./App.css";
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
+import Background from "./components/Background";
 import myConfig from "./config.js";
 
 class App extends Component {
@@ -48,6 +49,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Background />
         <div className="wrapper">
           <div className="main">
             <div className="container">

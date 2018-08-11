@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-const Background = props => (
-  <form onSubmit={props.getWeather}>
-    <input type="text" name="city" placeholder="City..." />
-    <input type="text" name="country" placeholder="Country..." />
-    <button>Search</button>
-  </form>
-);
+class Background extends Component {
+  render() {
+    return (
+      <div>
+        <h1>test</h1>
+      </div>
+    );
+  }
+}
 
 export default Background;
-
-//get the result
-//if result is sunny disply sunny video
-//if cloudy display cloudy
