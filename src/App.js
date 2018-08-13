@@ -49,16 +49,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Background />
+        <div className="videoBg">
+          <Background current={this.state.description} />
+        </div>
         <div className="wrapper">
           <div className="main">
             <div className="container">
               <div className="row">
-                <div className="col-xs-5 title-container">
+                <div className="col-md-5 title-container">
                   <Titles />
                 </div>
-                <div className="col-xs-7 form-container">
+                <div className="col-md-7 form-container">
                   <Form getWeather={this.getWeather} />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-12">
                   <Weather
                     temperature={this.state.temperature}
                     city={this.state.city}
@@ -78,16 +84,3 @@ class App extends Component {
 }
 
 export default App;
-
-{
-  /* <Titles />
-        <Form getWeather={this.getWeather} />
-        <Weather
-          temperature={this.state.temperature}
-          city={this.state.city}
-          country={this.state.country}
-          humidity={this.state.humidity}
-          description={this.state.description}
-          error={this.state.error}
-        /> */
-}
